@@ -23,6 +23,7 @@ public class LoginTestScenarios2 extends BaseClass {
 	{
 		ExcelDataProvider excel = new ExcelDataProvider();
 
+		
 		logger = report.startTest("LoginValid");
 
 		logger.log(LogStatus.INFO, "Browser and Application are up and running");
