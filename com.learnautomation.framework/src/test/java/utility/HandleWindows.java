@@ -8,5 +8,8 @@ public class HandleWindows
 		
 	}
 	
-	
+	public void test2()
+	{
+		
+	}
 }
