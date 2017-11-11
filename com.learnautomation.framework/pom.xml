@@ -17,6 +17,23 @@
 
 
 		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.4</version>
+
+		</dependency>
+
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+
+
+
+
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.4.0</version>
@@ -74,15 +91,20 @@
 				<version>2.17</version>
 				<configuration>
 
-					<suiteXmlFiles>
+					<!-- <suiteXmlFiles>
 						<suiteXmlFile>./XMLFiles/CRM.xml</suiteXmlFile>
-					</suiteXmlFiles>
+					</suiteXmlFiles> -->
 
-					<systemPropertyVariables>
 
-						<ExecutionBrowser>${Browser}</ExecutionBrowser>
+                <includes>
+                
+                 <include>**/CRMTestRunner.java</include>>
+                
+                </includes>
 
-					</systemPropertyVariables>
+
+					<!-- <systemPropertyVariables> <ExecutionBrowser>${Browser}</ExecutionBrowser> 
+						</systemPropertyVariables> -->
 
 				</configuration>
 			</plugin>
